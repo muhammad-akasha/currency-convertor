@@ -68,23 +68,3 @@ async function currencyConverter() {
     }
   }
 }
-function replacingValues() {
-  let val1 = selectedCurr;
-  let val2 = selectedExch;
-  let text1 = currText;
-  let text2 = exchText;
-
-  if (selectedCurr === val1 && selectedExch === val2 && currText === text1 && exchText === text2) {
-    selectedCurr = val2;
-    selectedExch = val1;
-    currText = text2;
-    exchText = text1;
-    // addingCurrencies();
-  } else {
-    selectedCurr = val1;
-    selectedExch = val2;
-    currText = text1;
-    exchText = text2;
-    // addingCurrencies();
-  }
-}
