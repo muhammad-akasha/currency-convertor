@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <div>
+        <form id="form">
+          <label for="amount">
+            Enter Amount
+          </label>
+          <br />
+          <input type="number" name="amount" id="amount" />
+          <div class="converter-inputs">
+            <div>
+              <label for="currency">From</label> <br />
+              <select name="currency" id="currency">
+                <option value="">Select Currency</option>
+              </select>
+            </div>
+            <div>
+              <br /><br />
+              <button onclick="replacingValues()">Replace</button>
+            </div>
+            <div>
+              <label for="exchange">To</label> <br />
+              <select name="exchange" id="exchange">
+                <option value="">Convert Currency</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <h2 id="result">after exchange</h2>
+          </div>
+          <button onclick="currencyConverter()" class="exch-btn">
+            Get Exchange Rate
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
